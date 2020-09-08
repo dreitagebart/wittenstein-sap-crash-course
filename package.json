@@ -1,8 +1,9 @@
 {
   "name": "wittenstein-sap-crash-course",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://dreitagebart.github.io/wittenstein-sap-crash-course",
+  "author": "dreitagebart <stefan.buechold@gmail.com>",
+  "repository": "https://github.com/dreitagebart/wittenstein-sap-crash-course.git",
+  "homepage": "https://dreitagebart.github.io/wittenstein-sap-crash-course",
   "dependencies": {
     "@dreitagebart/box": "^1.0.2",
     "@testing-library/jest-dom": "^4.2.4",
