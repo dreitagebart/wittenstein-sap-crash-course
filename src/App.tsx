@@ -1,7 +1,6 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import { Impress, Step } from 'react-impressjs'
-import { Box } from '@dreitagebart/box'
 
 import sapLogo from './assets/images/sap_trans.png'
 import { ReactComponent as ClientServer } from './assets/images/client_server.svg'
