@@ -1,0 +1,233 @@
+import { createGlobalStyle } from 'styled-components'
+import { normalize } from 'polished'
+
+import background from './images/zara.jpg'
+
+export const GlobalStyle = createGlobalStyle`
+  ${normalize()}
+
+  body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    background-image: url(${background});
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #react-impressjs {
+    line-height: 1;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+    background: url(${background});
+  }
+
+  .step {
+    position: relative;
+    width: 1200px;
+    padding: 0px;
+    margin: 20px auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* border: 1px solid red; */
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .no-bullet {
+    list-style-type: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+    transition: opacity 1s;
+  }
+
+  .impress-enabled .step.active {
+    opacity: 1;
+    cursor: default;
+  }
+
+  .impress-enabled .step a {
+    color: hsla(0, 0%, 100%, 0.8);
+    text-decoration: none;
+    padding: 0 0.4em;
+    background: #3e4852;
+    border-radius: 0.2em;
+    transition: all 0.5s;
+  }
+  
+  .impress-enabled .step a:focus,
+  .impress-enabled .step a:hover {
+    color: #e5b560;
+    background: #495561;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+  }
+  .impress-enabled .step b {
+    display: inline-block;
+    transition: all 0.5s;
+  }
+  
+  .impress-enabled .step.present .positioning {
+    transform: translateY(-10px);
+  }
+  
+  .impress-enabled .step.present .positioning,
+  .impress-enabled .step.present .positioning-down {
+    transition-delay: 1.25s;
+  }
+  
+  .impress-enabled .step.present .positioning-down {
+    transform: translateY(10px);
+  }
+  
+  .impress-enabled .step.present .rotating {
+    transform: rotate(-10deg);
+  }
+  
+  .impress-enabled .step.present .rotating,
+  .impress-enabled .step.present .rotating-right {
+    transition-delay: 1.5s;
+  }
+  
+  .impress-enabled .step.present .rotating-right {
+    transform: rotate(10deg);
+  }
+  
+  .impress-enabled .step.present .scaling {
+    transform: scale(0.7);
+  }
+  
+  .impress-enabled .step.present .scaling,
+  .impress-enabled .step.present .scaling-up {
+    transition-delay: 1.75s;
+  }
+  
+  .impress-enabled .step.present .scaling-up {
+    transform: scale(1.3);
+  }
+  
+  .slide {
+    display: block;
+    line-height: 36px;
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    box-shadow: 0 8px 16px rgba(0, 20, 80, 0.04), 0 4px 16px rgba(0, 0, 0, 0.08);
+    color: #666;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+
+  #overview {
+    display: none;
+  }
+
+  .impress-on-overview .step {
+    opacity: 1;
+  }
+
+  .hint {
+    opacity: 0;
+    animation: fadeOutUp 0.6s ease forwards;
+    color: hsla(0, 0%, 100%, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    text-align: center;
+    padding: 1em;
+    /* width: 400px; */
+    /* min-height: 100px; */
+    /* line-height: 100px; */
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    z-index: 9999;
+    border-radius: 3px;
+    filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.3));
+  }
+
+  .hint b {
+    color: #6FA2AE;
+  }
+
+  .mobile-hint {
+    opacity: 0;
+    animation: fadeOutUp 0.6s ease forwards;
+    text-align: center;
+    color: #3e4852;
+    width: 128px;
+    position: fixed;
+    left: calc(50% - 64px);
+    bottom: 10%;
+  }
+
+  .mobile-hint img {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+  }
+
+  .mobile-hint span {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .show .hint,
+  .show .mobile-hint {
+    animation: fadeInDown 0.6s ease 1s forwards;
+  }
+
+  .impress-enabled .hint,
+  .impress-enabled .mobile-hint {
+    display: block;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  .slide q {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+    margin-top: 100px;
+  }
+
+  .slide q strong {
+    white-space: nowrap;
+  }
+`
