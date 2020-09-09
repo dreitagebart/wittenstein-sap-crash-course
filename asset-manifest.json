@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/wittenstein-sap-crash-course/static/js/main.ecc0d482.chunk.js",
-    "main.js.map": "/wittenstein-sap-crash-course/static/js/main.ecc0d482.chunk.js.map",
+    "main.js": "/wittenstein-sap-crash-course/static/js/main.2af25bc6.chunk.js",
+    "main.js.map": "/wittenstein-sap-crash-course/static/js/main.2af25bc6.chunk.js.map",
     "runtime-main.js": "/wittenstein-sap-crash-course/static/js/runtime-main.0bd898f9.js",
     "runtime-main.js.map": "/wittenstein-sap-crash-course/static/js/runtime-main.0bd898f9.js.map",
     "static/js/2.5331bdde.chunk.js": "/wittenstein-sap-crash-course/static/js/2.5331bdde.chunk.js",
     "static/js/2.5331bdde.chunk.js.map": "/wittenstein-sap-crash-course/static/js/2.5331bdde.chunk.js.map",
     "index.html": "/wittenstein-sap-crash-course/index.html",
-    "precache-manifest.c58102b56e5901808d27aa1381aae849.js": "/wittenstein-sap-crash-course/precache-manifest.c58102b56e5901808d27aa1381aae849.js",
+    "precache-manifest.f92ce4e4e58d1c751f8f7a8f5f7e2269.js": "/wittenstein-sap-crash-course/precache-manifest.f92ce4e4e58d1c751f8f7a8f5f7e2269.js",
     "service-worker.js": "/wittenstein-sap-crash-course/service-worker.js",
     "static/js/2.5331bdde.chunk.js.LICENSE.txt": "/wittenstein-sap-crash-course/static/js/2.5331bdde.chunk.js.LICENSE.txt",
     "static/media/client_server.99a70900.svg": "/wittenstein-sap-crash-course/static/media/client_server.99a70900.svg",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.0bd898f9.js",
     "static/js/2.5331bdde.chunk.js",
-    "static/js/main.ecc0d482.chunk.js"
+    "static/js/main.2af25bc6.chunk.js"
   ]
 }

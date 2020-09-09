@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "28e6f48d41472fce75c1b9a9c9626599",
+    "revision": "55952336d2ed69758a38994ea72b6435",
     "url": "/wittenstein-sap-crash-course/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wittenstein-sap-crash-course/static/js/2.5331bdde.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4459f60de36a84877c9b",
-    "url": "/wittenstein-sap-crash-course/static/js/main.ecc0d482.chunk.js"
+    "revision": "11b42688f80fef3c63ec",
+    "url": "/wittenstein-sap-crash-course/static/js/main.2af25bc6.chunk.js"
   },
   {
     "revision": "56f0d44dbac8c57ac51f",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wittenstein-sap-crash-course/precache-manifest.c58102b56e5901808d27aa1381aae849.js"
+  "/wittenstein-sap-crash-course/precache-manifest.f92ce4e4e58d1c751f8f7a8f5f7e2269.js"
 );
 
 self.addEventListener('message', (event) => {
