@@ -116,7 +116,7 @@ const App: React.FC = () => {
             Softwarehersteller
           </li>
           <li>
-            Deutschlands <strong>wertvollstes Unternehmen</strong> (165 Mrd. Euro)
+            Deutschlands <strong>wertvollstes Unternehmen</strong> (165&nbsp;Mrd. Euro)
           </li>
           <li>
             Firmensitz in <strong>Walldorf</strong> bei Mannheim
@@ -125,11 +125,12 @@ const App: React.FC = () => {
             ca. <strong>100.000 Mitarbeiter</strong> weltweit
           </li>
           <li>
-            betreut weltweit über <strong>440.000 Kunden</strong> Umsatz 2019: ~ 27,5 Mrd. Euro
+            betreut weltweit über <strong>440.000 Kunden</strong> Umsatz 2019: ~&nbsp;27,5&nbsp;Mrd.
+            Euro
           </li>
           <li>
             entwickelt <strong>Software für Unternehmen</strong> zur Abwicklung von gesamten
-            Geschäftsprozessen z. B. Buchhaltung, Einkauf, Vertrieb, etc...
+            Geschäftsprozessen z.&nbsp;B. Buchhaltung, Einkauf, Vertrieb, etc...
           </li>
         </ul>
       </Step>
